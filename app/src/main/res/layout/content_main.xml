@@ -25,14 +25,6 @@
             android:layout_height="match_parent"
             android:scaleType="center" />
 
-        <Button
-            android:id="@+id/face_detection_camera_toggle_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|end"
-            android:layout_margin="8dp"
-            android:text="toggle" />
-
     </FrameLayout>
 
     <ImageView

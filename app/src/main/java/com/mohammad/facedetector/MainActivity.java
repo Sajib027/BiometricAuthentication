@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements FrameProcessor {
     private RecyclerView bottomSheetRecyclerView;
     private BottomSheetBehavior bottomSheetBehavior;
     private ArrayList<FaceDetectionModel> faceDetectionModels;
-    private Button toggleBtn;
     private FrameLayout bottomSheetBtn;
     private ActivityResultLauncher<String> mGetContent;
 
@@ -70,7 +69,6 @@ public class MainActivity extends AppCompatActivity implements FrameProcessor {
         bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottom_sheet));
         imgView = findViewById(R.id.face_detection_image_view);
         faceDetectionCameraView = findViewById(R.id.face_detection_camera_view);
-        toggleBtn = findViewById(R.id.face_detection_camera_toggle_button);
         bottomSheetBtn = findViewById(R.id.bottom_sheet_button);
         bottomSheetRecyclerView = findViewById(R.id.bottom_sheet_recycler_view);
 
@@ -154,6 +152,8 @@ public class MainActivity extends AppCompatActivity implements FrameProcessor {
                 });
 
     }
+
+
 
     private void detectFaces(List<FirebaseVisionFace> firebaseVisionFaces, Bitmap mutableImg) {
         if(firebaseVisionFaces==null || mutableImg==null){
