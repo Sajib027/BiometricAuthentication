@@ -20,7 +20,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -255,9 +254,9 @@ public class MainActivity extends AppCompatActivity implements FrameProcessor {
                         rightMouth.getPosition().getY(), landmarkPaint);
             }
 
-            faceDetectionModels.add(new FaceDetectionModel(i, "Smiling Probability " + face.getSmilingProbability()));
-            faceDetectionModels.add(new FaceDetectionModel(i, "Left Eye Open Probability " + face.getLeftEyeOpenProbability()));
-            faceDetectionModels.add(new FaceDetectionModel(i, "Right Eye Open Probability " + face.getRightEyeOpenProbability()));
+            faceDetectionModels.add(new FaceDetectionModel(i, "Smiling Probability :" + face.getSmilingProbability()));
+            faceDetectionModels.add(new FaceDetectionModel(i, "Left Eye Open Probability :" + face.getLeftEyeOpenProbability()));
+            faceDetectionModels.add(new FaceDetectionModel(i, "Right Eye Open Probability :" + face.getRightEyeOpenProbability()));
         }
 
     }

@@ -25,10 +25,10 @@
 
         <ImageView
             android:id="@+id/bottom_sheet_button_image"
-            android:layout_width="wrap_content"
+            android:layout_width="42dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@android:drawable/ic_menu_camera" />
+            android:src="@android:drawable/ic_menu_gallery" />
 
         <ProgressBar
             android:id="@+id/bottom_sheet_button_progress"
